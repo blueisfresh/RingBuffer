@@ -4,54 +4,52 @@
     {
         static void Main(string[] args)
         {
-            // TODO: Null Werte im Int
-            RingBuffer<string> ringbufferString = new RingBuffer<string>(5);
+            // Test mit Strings
+            RingBuffer<string> ringBufferString = new RingBuffer<string>(5);
 
-            Console.WriteLine("Strings\n");
+            Console.WriteLine("==== String RingBuffer Test ====\n");
 
-            ringbufferString.Add("elias1");
-            ringbufferString.Add("elias2");
-            ringbufferString.Add("elias3");
-            ringbufferString.Add("elias4");
-            ringbufferString.Add("elias5");
-            ringbufferString.Add("elias6");
-            ringbufferString.Add("elias7");
-            ringbufferString.Add("elias8");
-            ringbufferString.Add("elias9");
-            // ringbuffer.Add("elias10");
-
-            Console.WriteLine("All The Values got added\n");
-
-            Console.WriteLine(ringbufferString.ToString());
-
-            Console.WriteLine($"\nThe used Size: {ringbufferString.UsedSize}\n");
-
-            ringbufferString.Clear();
-
-            Console.WriteLine("The ringbuffer got cleared \n");
-
-            Console.WriteLine(ringbufferString.ToString());
-
-            RingBuffer<int> ringbufferInt = new RingBuffer<int>(5);
-
-            Console.WriteLine("\nInt\n");
-
-            for(int i = 0; i < 7; i++)
+            // Hinzufügen von Werten zum Ringbuffer
+            for (int i = 1; i <= 9; i++)
             {
-                ringbufferInt.Add(i);
+                ringBufferString.Add($"elias{i}");
             }
 
-            Console.WriteLine("All The Values got added\n");
+            Console.WriteLine("Alle String-Werte wurden hinzugefügt.");
+            Console.WriteLine("\nInhalt des RingBuffers:");
+            Console.WriteLine(ringBufferString.ToString());
+            Console.WriteLine($"Genutzte Größe: {ringBufferString.UsedSize}\n");
 
-            Console.WriteLine(ringbufferInt.ToString());
+            // Ringbuffer leeren
+            ringBufferString.Clear();
+            Console.WriteLine("Der String RingBuffer wurde geleert.");
+            Console.WriteLine("\nInhalt des RingBuffers:");
+            Console.WriteLine(ringBufferString.ToString());
+            Console.WriteLine($"Genutzte Größe: {ringBufferString.UsedSize}\n");
 
-            Console.WriteLine($"\nThe used Size: {ringbufferInt.UsedSize}\n");
+            // Test mit Int-Werten
+            RingBuffer<int> ringBufferInt = new RingBuffer<int>(5);
 
-            ringbufferInt.Clear();
+            Console.WriteLine("\n==== Integer RingBuffer Test ====\n");
 
-            Console.WriteLine("The ringbuffer got cleared\n");
-            
-            Console.WriteLine(ringbufferInt.ToString());
+            // Hinzufügen von Werten zum Ringbuffer
+            for (int i = 0; i < 7; i++)
+            {
+                ringBufferInt.Add(i);
+            }
+
+            Console.WriteLine("Alle Integer-Werte wurden hinzugefügt.");
+            Console.WriteLine("\nInhalt des RingBuffers:");
+            Console.WriteLine(ringBufferInt.ToString());
+            Console.WriteLine($"Genutzte Größe: {ringBufferInt.UsedSize}\n");
+
+            // Ringbuffer leeren
+            ringBufferInt.Clear();
+            Console.WriteLine("Der Integer RingBuffer wurde geleert.");
+            Console.WriteLine("\nInhalt des RingBuffers:");
+            Console.WriteLine(ringBufferInt.ToString());
+            Console.WriteLine($"Genutzte Größe: {ringBufferInt.UsedSize}\n");
+
         }
     }
 }

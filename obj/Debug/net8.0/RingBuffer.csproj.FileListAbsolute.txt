@@ -12,3 +12,4 @@ C:\Work\Dev\git\Github\RingBuffer\obj\Debug\net8.0\refint\RingBuffer.dll
 C:\Work\Dev\git\Github\RingBuffer\obj\Debug\net8.0\RingBuffer.pdb
 C:\Work\Dev\git\Github\RingBuffer\obj\Debug\net8.0\RingBuffer.genruntimeconfig.cache
 C:\Work\Dev\git\Github\RingBuffer\obj\Debug\net8.0\ref\RingBuffer.dll
+C:\Work\Dev\git\Github\RingBuffer\obj\Debug\net8.0\RingBuffer.sourcelink.json

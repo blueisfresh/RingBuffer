@@ -46,7 +46,7 @@ namespace RingBuffer
         }
         public void Clear ()
         {
-            Array.Clear(values, 0, usedSize);
+            Array.Clear(values, 0, values.Length);
             index = 0;
             isFull = false;
         }

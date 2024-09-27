@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RingBuffer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+be5117f748183884e5ad36e98fda091c0c205932")]
 [assembly: System.Reflection.AssemblyProductAttribute("RingBuffer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RingBuffer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
