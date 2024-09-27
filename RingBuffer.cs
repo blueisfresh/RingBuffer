@@ -17,10 +17,11 @@ namespace RingBuffer
         private int usedSize = 0; // How much is already in the array
         private T[] values;
         private int index = 0;
+        private bool isFull = false;
 
         // Properties
-        public int UsedSize { get { return usedSize; } set { usedSize = value; } }
-        public int TotalLength { get { return totalLength;  } set { totalLength = value; } }
+        public int UsedSize { get { return isFull ? totalLength : index; } }
+        public int TotalLength { get { return totalLength;  } }
 
         // Constructor
         public RingBuffer(int totalLength)
@@ -38,42 +39,30 @@ namespace RingBuffer
         // Methods
         public void Add(T item)
         {
-            if (index >= values.Length)
-            {
-                index = 0;
+            values[index] = item;
+            index = (index + 1) % totalLength;
 
-                values[0] = item;
-
-                index++;
-            } else
-            {
-                values[index] = item;
-
-                index++;
-
-                if(usedSize < values.Length)
-                {
-                usedSize++;
-                }
-            }
-
+            isFull = isFull || index == 0;
         }
         public void Clear ()
         {
-            Array.Clear(values, 0, usedSize); // Length heist wie viele (ab postion 0 -> solange bis totalValues)
+            Array.Clear(values, 0, usedSize);
+            index = 0;
+            isFull = false;
         }
 
         public override string ToString()
         {
-            string returnstring = string.Empty;
+            StringBuilder sb = new StringBuilder();
+
             for(int i = 0; i < values.Length; i++)
             {
                 int index = (this.index + i) % values.Length;
 
-                returnstring += values[index] + ",";
+                sb.Append(values[index] + ",");
             }
 
-            return returnstring;
+            return sb.ToString();
         }
     }
 }
