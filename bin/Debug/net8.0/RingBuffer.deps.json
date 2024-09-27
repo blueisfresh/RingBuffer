@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v8.0": {
       "RingBuffer/1.0.0": {
+        "dependencies": {
+          "Toolbox": "1.0.0"
+        },
         "runtime": {
           "RingBuffer.dll": {}
+        }
+      },
+      "Toolbox/1.0.0": {
+        "runtime": {
+          "Toolbox.dll": {}
         }
       }
     }
   },
   "libraries": {
     "RingBuffer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Toolbox/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
