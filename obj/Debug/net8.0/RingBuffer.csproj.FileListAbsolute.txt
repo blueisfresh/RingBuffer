@@ -1,0 +1,14 @@
+C:\Work\Dev\git\Github\RingBuffer\bin\Debug\net8.0\RingBuffer.exe
+C:\Work\Dev\git\Github\RingBuffer\bin\Debug\net8.0\RingBuffer.deps.json
+C:\Work\Dev\git\Github\RingBuffer\bin\Debug\net8.0\RingBuffer.runtimeconfig.json
+C:\Work\Dev\git\Github\RingBuffer\bin\Debug\net8.0\RingBuffer.dll
+C:\Work\Dev\git\Github\RingBuffer\bin\Debug\net8.0\RingBuffer.pdb
+C:\Work\Dev\git\Github\RingBuffer\obj\Debug\net8.0\RingBuffer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Work\Dev\git\Github\RingBuffer\obj\Debug\net8.0\RingBuffer.AssemblyInfoInputs.cache
+C:\Work\Dev\git\Github\RingBuffer\obj\Debug\net8.0\RingBuffer.AssemblyInfo.cs
+C:\Work\Dev\git\Github\RingBuffer\obj\Debug\net8.0\RingBuffer.csproj.CoreCompileInputs.cache
+C:\Work\Dev\git\Github\RingBuffer\obj\Debug\net8.0\RingBuffer.dll
+C:\Work\Dev\git\Github\RingBuffer\obj\Debug\net8.0\refint\RingBuffer.dll
+C:\Work\Dev\git\Github\RingBuffer\obj\Debug\net8.0\RingBuffer.pdb
+C:\Work\Dev\git\Github\RingBuffer\obj\Debug\net8.0\RingBuffer.genruntimeconfig.cache
+C:\Work\Dev\git\Github\RingBuffer\obj\Debug\net8.0\ref\RingBuffer.dll
